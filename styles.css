@@ -1,0 +1,157 @@
+/*=======
+  RESET
+=========*/
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*=======
+  GENERAL
+=========*/
+
+body {
+	font-size: .9375rem;
+	font-family: "Spartan", sans-serif;
+	padding: 1.2rem;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2.5rem 0;
+	position: relative;
+}
+
+body::before {
+	content: '';
+	background-image: url("images/bg-pattern-top-mobile.svg");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: -3rem; /*based on body top margin*/
+	z-index: -1;
+}
+
+p {
+	line-height: 150%;
+}
+
+/*=======
+  HEADER
+=========*/
+
+.component__header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.component__heading, .component__description {
+	text-align: center;
+}
+
+.component__heading {
+	color: hsl(300, 43%, 22%);
+	width: 80%;
+}
+
+.component__description {
+	color: hsl(303, 10%, 53%);
+	margin: 1.5rem 0;
+}
+
+
+/*========
+  RATINGS
+=========*/
+
+.component__rating-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+
+
+.component__rating {
+	list-style: none;
+	width: 100%;
+	background-color: hsl(300, 24%, 96%);
+	padding: 1rem;
+	margin: .5rem;
+	border-radius: 5px;
+}
+
+.component__stars-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: .8rem;
+}
+
+.component__star {
+	background-image: url("images/icon-star.svg");
+	width: 1rem;
+	height: 1rem;
+	margin-right: .5rem;
+}
+
+.component__rating-description {
+	font-weight: 700;
+	color: hsl(300, 43%, 22%);
+	text-align: center;
+}
+
+/*========
+  REVIEWS
+=========*/
+
+.component__review {
+	background-color: hsl(300, 43%, 22%);
+	margin: 1rem 0;
+	padding: 2.3rem;
+	border-radius: 5px;
+}
+
+.component__review-name, .component__review-quote {
+	color: hsl(0, 0%, 100%);
+}
+
+.component__review-name {
+	font-size: .9375rem;
+}
+
+.component__review-buyer {
+	color: hsl(333, 80%, 67%)
+}
+
+.component__review-profile {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.component__profile-photo {
+	border-radius: 50%;
+	width: 2.5rem;
+	margin-right: 1.2rem;
+}
+
+/*=========
+  DESKTOP
+==========*/
+
