@@ -38,6 +38,10 @@ p {
 	line-height: 175%;
 }
 
+.component {
+	max-width: 700px;
+}
+
 /* ======================
  BACKGROUND DECORATIONS
  ====================== */
@@ -62,10 +66,6 @@ body::after {
 	background-image: url("images/bg-pattern-bottom-mobile.svg");
 	background-position: bottom right;
 	bottom: 0;
-}
-
-.component {
-	max-width: 700px;
 }
 
 /*=======
@@ -210,13 +210,12 @@ body::after {
 		background-image: url("images/bg-pattern-bottom-desktop.svg");
 	}
 
-	.component {
-		max-width: 1500px;
-	}
-
 	/*================
 	  COMPONENT LAYOUT
 	===================*/
+	.component {
+		max-width: 1500px;
+	}
 
 	.component-grid {
 		display: grid;
